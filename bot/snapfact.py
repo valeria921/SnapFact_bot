@@ -67,7 +67,7 @@ def handle_callback(call):
 
 
 def send_random_fact(chat_id, category_id):
-    response = requests.get(f"https://www.idonotlikedocker.com/api/categories/{category_id}/random_fact/")
+    response = requests.get(f"https://idonotlikedocker.com/api/categories/{category_id}/random_fact/")
     data = response.json()
 
     title = data.get('fact_title', 'No title')
